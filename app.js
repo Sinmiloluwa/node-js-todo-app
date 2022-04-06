@@ -13,5 +13,6 @@ app.use(express.static('./public'));
 todoController(app);
 
 // listen to port
-app.listen(3000);
+const port = process.env.PORT || 5000
+app.listen(port);
 console.log('You are listening to the port 3000');
